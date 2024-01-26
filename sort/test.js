@@ -130,7 +130,7 @@ function merge() {
 		document.getElementById("steps").innerHTML += "<h3>Merge "+passno+"</h3><ol>"+listtool(nl)+"</ol>";
 		passno++;
 	}
-	document.getElementById("steps").innerHTML = "<h2>Extract Sorted List:</h2><ol>"+listtool(nl[0])+"</ol>";
+	document.getElementById("steps").innerHTML += "<h3>Extract Sorted List:</h3><ol>"+listtool(nl[0])+"</ol>";
 	busy = false;
 	document.getElementById("sortedlist").innerHTML = "<h2>Sorted List:</h2><ol>"+listtool(nl[0])+"</ol>";
 }
