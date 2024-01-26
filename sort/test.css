@@ -1,0 +1,24 @@
+ol {
+	list-style-type:upper-roman;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+ul {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+li.smalllist{
+    flex:1;
+	flex-basis:20%;
+}
+
+li.biglist{
+    flex:1;
+	flex-basis:33%;
+}
+
+p {
+	text-wrap:wrap;
+}

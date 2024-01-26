@@ -1,0 +1,47 @@
+<!doctype HTML>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="test.css">
+		<script src="test.js">
+		</script>
+	</head>
+	
+	<body>
+		<div style="display:flex;flex-wrap:wrap;">
+			<div style="flex:1;flex-basis:66%;min-width:350px;">
+				<div>
+					<h2>Sorting Algorithm Demonstration</h2>
+					<h2>Add a positive integer:</h2>
+					<input type="text" id="addno">
+					<input type="button" value="Add" onclick="addno()">
+					<input type="button" value="Reset" onclick="resetlist()">
+				</div>
+				<p></p>
+				<div style="display:flex;width:80%;">
+					<input type="button" value="Bubble Sort" onclick="bubble()" style="flex:1;flex-basis:20%;width:80%;">
+					<input type="button" value="Selection Sort" onclick="selection()" style="flex:1;flex-basis:20%;width:80%;">
+					<input type="button" value="Insertion Sort" onclick="insertion()" style="flex:1;flex-basis:20%;width:80%;">
+					<input type="button" value="Merge Sort" onclick="merge()" style="flex:1;flex-basis:20%;width:80%;">
+					<input type="button" value="Counting Sort" onclick="counting()" style="flex:1;flex-basis:20%;width:80%;">
+				</div>
+				<div style="">
+					<div>
+						<h2>My List:</h2>
+						<ol id="mylist"></ol>
+					</div>
+					<div>
+						<div id="step"></div>
+						<div id="steps" style="height:10em;overflow-y:scroll;">
+						</div>
+					</div>
+					<div id="sortedlist">
+					</div>
+				</div>
+			</div>
+			<div id="explain" style="flex:1;flex-basis:28%;min-width:350px;">
+			</div>
+		</div>
+	</body>
+	
+</html>

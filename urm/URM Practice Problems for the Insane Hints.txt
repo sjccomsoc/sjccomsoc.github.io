@@ -1,0 +1,5 @@
+Easy Problem: Use Jump
+Medium Problem: Use 2 Jumps
+Hard Problem: Reuse above solution and more Jumps
+
+If you get stuck, use paper (the blackboard)!

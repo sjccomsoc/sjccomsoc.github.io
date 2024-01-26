@@ -1,0 +1,71 @@
+<!doctype HTML>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="test.css">
+		<script src="test.js">
+		</script>
+	</head>
+	
+	<body onload="docs()">
+	<div style="display:grid;grid-template-columns:20% 10% 20% 10% 40%">
+	
+		<div>
+		<textarea cols=2 rows=23 readonly=true wrap='hard'>01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</textarea>
+		<textarea cols=12 rows=23></textarea>
+		</div>
+		
+		<div style="display:grid;grid-template-rows: 5em 5em 5em 5em 5em">
+		<div>
+			<p>Next Line:</p>
+			<input type="text" id='linebox' value="1" style='box-sizing:box-border;width:64px;'>
+		</div>
+		<input type='button' value='Next Line' onclick='nxtln()'>
+		<input type='button' value='Reset Registers' onclick='r_reset()'>
+		
+		<input type='button' value='Run All' onclick='run()'>
+		</div>
+		
+		<div>
+		<textarea cols=14 rows=23 readonly='true' id='outbox'>Line:1
+Registers:</textarea>
+		</div>
+		
+		<div style="display:grid;grid-template-rows: 5em 5em 5em 5em 5em 5em">
+		<input type='button' value='Documentation' id='d' onclick='docs()'>
+		<input type='button' value='Beginner' id='b' onclick='checklearn()'>
+		<input type='button' value='Easy' id='e' onclick='easy()'>
+		<input type='button' value='Medium' id='m' onclick='sad()'>
+		<input type='button' value='Medium: Hint' id='mhint' onclick='sadhint()'>
+		<input type='button' value='Hard' id='h' onclick='cry()'>
+		</div>
+		
+		<textarea id='q' cols=28 rows=23 readonly='true' style='margin-left:10px;'></textarea>
+		
+	</div>
+		<textarea id='registers' hidden>{}</textarea>
+	</body>
+	
+</html>
