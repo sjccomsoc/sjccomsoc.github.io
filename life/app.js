@@ -107,14 +107,7 @@ function init() {
 	document.getElementById("canvas").height = Math.round(win*0.95)
 	// Run main() at set interval
 	setInterval(
-		function(){
-			run(c,c.ctx,Math.round(win*0.95/x),Math.round(win*0.95/x))
-			loopi++
-			if (loopi > Math.round(3*(Math.random()*100+80))) {
-				loopi = 0
-				location.reload()
-			}
-	},250);
+		function(){run(c,c.ctx,Math.round(win*0.95/x),Math.round(win*0.95/x))},250);
 	return 0;
 }
 
