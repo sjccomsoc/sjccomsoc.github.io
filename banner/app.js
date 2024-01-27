@@ -81,7 +81,7 @@ var loopi = 0
 	
 function init() {
 	// Change document title and text under canvas
-	document.title = "Conway's Game of Life";
+	document.title = "Computer Society 149th Open Day Stall";
 	x = 50
 	var c = new GameOfLife();
 	//c.board = [[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[1,1,1,1,1,1,1,1,1,1,1],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0]];
