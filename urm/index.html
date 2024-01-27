@@ -8,8 +8,8 @@
 	</head>
 	
 	<body onload="docs()">
-	<div style="display:grid;grid-template-columns:20% 10% 20% 10% 40%">
-	
+	<div style="display:flex;flex-wrap:wrap;">
+	<div style="flex:1;flex-basis:50%;display:grid;grid-template-columns:40% 20% 40%;">
 		<div>
 		<textarea cols=2 rows=23 readonly=true wrap='hard'>01
 02
@@ -52,18 +52,19 @@
 		<textarea cols=14 rows=23 readonly='true' id='outbox'>Line:1
 Registers:</textarea>
 		</div>
-		
+	</div>
+	<div style="flex:1;flex-basis:50%;display:grid;grid-template-columns:20% 80%;">	
 		<div style="display:grid;grid-template-rows: 5em 5em 5em 5em 5em 5em">
-		<input type='button' value='Documentation' id='d' onclick='docs()'>
-		<input type='button' value='Beginner' id='b' onclick='checklearn()'>
-		<input type='button' value='Easy' id='e' onclick='easy()'>
-		<input type='button' value='Medium' id='m' onclick='sad()'>
-		<input type='button' value='Medium: Hint' id='mhint' onclick='sadhint()'>
-		<input type='button' value='Hard' id='h' onclick='cry()'>
+			<input type='button' value='Documentation' id='d' onclick='docs()'>
+			<input type='button' value='Beginner' id='b' onclick='checklearn()'>
+			<input type='button' value='Easy' id='e' onclick='easy()'>
+			<input type='button' value='Medium' id='m' onclick='sad()'>
+			<input type='button' value='Medium: Hint' id='mhint' onclick='sadhint()'>
+			<input type='button' value='Hard' id='h' onclick='cry()'>
 		</div>
 		
 		<textarea id='q' cols=28 rows=23 readonly='true' style='margin-left:10px;'></textarea>
-		
+	</div>
 	</div>
 		<textarea id='registers' hidden>{}</textarea>
 	</body>
