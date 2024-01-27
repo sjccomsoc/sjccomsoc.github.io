@@ -149,7 +149,7 @@ function counting() {
 			biggest = i;
 		}
 	}
-	if (biggest>=10000) { alert("Please be considerate! Best demonstrated with small numbers (<500).");busy=false;return; }
+	//if (biggest>=100000) { alert("Please be considerate! Best demonstrated with small numbers (<500).");busy=false;return; }
 	document.getElementById("step").innerHTML = "<h2>Steps:</h2>";
 	document.getElementById("steps").innerHTML += "<h3>Biggest Number: "+biggest+"</h3>";
 	for (let i=0; i<=biggest; i++) { freq[i] = 0; }
