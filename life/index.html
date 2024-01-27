@@ -1,0 +1,27 @@
+<! DOCTYPE html>
+<html> 
+	<head> 
+		<title></title> 
+		<script src="app.js"></script> 
+	</head> 
+	<body onLoad="init();"> 
+		<div style="display:flex;flex-wrap:wrap;">
+			<canvas id="canvas" style="flex:1;flex-basis:50%;"> 
+				No canvas support found!
+			</canvas>
+			<div style="flex:1;flex-basis:50%;">
+			<p>
+			Shown here is an instance of Conway's Game of Life, a cellular automaton. Cellular automata have found application in various areas, including physics, theoretical biology and microstructure modeling.
+			<br><br>
+			A cellular automaton consists of a regular grid of cells, each in one of a finite number of states, such as on and off . The grid can be in any finite number of dimensions. For each cell, a set of cells called its neighborhood is defined relative to the specified cell, i.e. all the cells "near" a cell are its neighbours.
+			<br><br>
+			An initial state is selected by assigning a state for each cell. A new generation is created according to some fixed rule that determines the new state of each cell in terms of the current state of the cell and the states of the cells in its neighborhood. Typically, the rule for updating the state of cells is the same for each cell and does not change over time, and is applied to the whole grid simultaneously, though there are exceptions such as the stochastic cellular automaton and asynchronous cellular automaton.
+			<br><br>
+			For Conway's Game of Life, a cell is on in the next generation if it has exactly 2 or 3 on neighbours in the 9x9 grid around it in the previous generation, and turns off otherwise. This simple rule can result in many interesting patterns, which can be explored on the left or viewed elsewhere.
+			<br><br>
+			We have used cellular automata in many areas recently. For example, it helped us to fight the Covid-19 pandemic by capturing the effects of infection spread over space, providing a more realistic representation compared to mean-field models like the SIR model. Additionally, cellular automata have helped us better understand things such as fluid dynamics and naturally-occuring patterns. It's also a common method of procedural generation.
+			</p>
+			</div>
+		</div>		
+	</body> 
+</html>
